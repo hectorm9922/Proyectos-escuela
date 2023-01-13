@@ -1,0 +1,12 @@
+:root
+{
+    --color_primario: #0B1A47;
+    --color_nav: #031346;
+    --color_texto: #ffffff;
+
+    --tamanio_escritorio: 60%;
+    --tamanio_mobil: 68%;
+    --titulos: 45px;
+    --subtitulos: 24px;
+    --textos: 18px;
+}

@@ -1,0 +1,157 @@
+@import url('../style.css');
+@import url('../variables.css');
+
+.main{
+    width: 100%;
+}
+
+.bg__img
+{
+    width: 100%;
+    height: 400px;
+    background-image: url('../materials/jesse-gardner-OwWbUOIbhDY-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main__header
+{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.651);
+    position: absolute;
+    top: 0;
+}
+
+.main__header > .main__header-format
+{
+    color: #fff;
+    text-align: center;
+}
+
+.main__header h1
+{
+    font-size: var(--titulos);
+}
+
+.main__header h2
+{
+    font-size: 36px;
+}
+
+.main__header p
+{
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.main__header-format
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__paquetes
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__paquete-box
+{
+    margin: 20px 0;
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.main__paquete-img
+{
+    width: 100%;
+    height: 250px;
+}
+
+.main__paquete-img img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.main__paquete-img, .main__paquete-box
+{
+    border-radius: 10px;
+}
+
+.main__paquete-items
+{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main__paquete-items
+{
+    color: #000;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.main__paquete--link
+{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #031346;
+}
+.main__paquete--link:hover
+{
+    background-color: #ea1d63;
+}
+
+.main__paquete--precios
+{
+    text-align: center;
+    color: #ea1d63;
+}
+
+@media (min-width: 767px){
+
+    .main
+    {
+        width: calc(100% - 60px);
+        float: right;
+    }
+
+    .main__header
+    {
+        width: calc(100% - 60px);
+        float: right;
+    }
+
+}
+
+@media (min-width: 1100px){
+
+    .main__paquetes
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main__paquete-box
+    {
+        margin: 100px 0 0 0;
+    }
+}
